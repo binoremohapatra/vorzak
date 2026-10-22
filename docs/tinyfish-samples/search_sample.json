@@ -2,19 +2,84 @@
   "query": "protest photo fact check",
   "results": [
     {
-      "title": "Fact Check: 2018 Training Exercise Image Falsely Linked to 2024 Event",
-      "url": "https://www.reuters.com/fact-check/2018-exercise-image-2024-claim",
-      "snippet": "A photograph showing military armor was captured during a 2018 NATO exercise in Poland, not in 2024.",
-      "domain": "reuters.com",
-      "published_date": "2024-10-15T12:00:00Z"
+      "date": "7 days ago",
+      "position": 1,
+      "site_name": "www.nytco.com",
+      "snippet": "Online commentators have suggested that this image from our October 2026 Delhi protest coverage was taken in 2020. This is false; the image ...",
+      "title": "Tracking Misinformation: Delhi Protest Photo Claims",
+      "url": "https://www.nytco.com/press/tracking-misinformation-delhi-protest-photo-claims/"
     },
     {
-      "title": "Military exercises conclude in Eastern Poland",
-      "url": "https://apnews.com/article/poland-military-drills-2018",
-      "snippet": "Troops participate in tactical drills in western Poland on June 14, 2018.",
-      "domain": "apnews.com",
-      "published_date": "2018-06-14T16:30:00Z"
+      "position": 2,
+      "site_name": "www.reuters.com",
+      "snippet": "Reuters Fact Check addresses online misinformation with coverage that maintains accuracy, integrity and impartiality. The unit is part of Reuters news ...",
+      "title": "Reuters Fact Check",
+      "url": "https://www.reuters.com/fact-check/"
+    },
+    {
+      "date": "1 year ago",
+      "position": 3,
+      "site_name": "www.youtube.com",
+      "snippet": "Dozens of people have been arrested in Los Angeles after days of violent protests, which erupted following immigration raids.",
+      "title": "Viral fakes on LA protests | DW Fact Check",
+      "url": "https://www.youtube.com/shorts/7F8fOJXZGW4"
+    },
+    {
+      "date": "May 29, 2020",
+      "position": 4,
+      "site_name": "www.kvue.com",
+      "snippet": "So we can confirm this picture really is of a burning building that was set on fire during protests in Minneapolis. Identity and motives of a ...",
+      "title": "Minneapolis protests: Fact-checking viral photos, claims",
+      "url": "https://www.kvue.com/article/news/verify/fact-checking-photos-claims-minneapolis-protests/507-d170e1dd-e8a4-4c8e-af79-1a8165a73b68"
+    },
+    {
+      "date": "Jun 12, 2025",
+      "position": 5,
+      "site_name": "www.pbs.org",
+      "snippet": "Days of demonstrations against federal immigration raids in Los Angeles have fueled round-the-clock news coverage and a number of misleading ...",
+      "title": "Fact-checking misinformation about the Los Angeles protests",
+      "url": "https://www.pbs.org/newshour/politics/fact-checking-misinformation-about-the-los-angeles-protests"
+    },
+    {
+      "position": 6,
+      "site_name": "www.gettyimages.com",
+      "snippet": "Browse 737 fake news protest photos and images available, or start a new search to explore more photos and images. Photos; Video.",
+      "title": "Fake News Protest Stock Photos",
+      "url": "https://www.gettyimages.com/photos/fake-news-protest"
+    },
+    {
+      "date": "3 days ago",
+      "position": 7,
+      "site_name": "toolbox.google.com",
+      "snippet": "Claim by Maharlika News: President Ferdinand Marcos Jr. distributed ambulance and fire trikes to local government units (LGUs) across the ...",
+      "title": "Fact Check Tools Recents",
+      "url": "https://toolbox.google.com/factcheck/explorer?authuser=0"
+    },
+    {
+      "date": "1 year ago",
+      "position": 8,
+      "site_name": "www.facebook.com",
+      "snippet": "Fact Check: AI, not Mumbai. This 'Marathi imposition' protest video is fake. This video, allegedly showing a huge protest agains.",
+      "title": "India Today Fact Check, however, found that this video ...",
+      "url": "https://www.facebook.com/IndiaToday/posts/india-today-fact-check-however-found-that-this-video-does-not-show-a-real-protes/1213480594148820/"
+    },
+    {
+      "date": "Jan 6, 2021",
+      "position": 9,
+      "site_name": "www.usatoday.com",
+      "snippet": "As thousands gathered this week at the National Mall in Washington, D.C., to protest election results, some users took to social media to ...",
+      "title": "Fact check: Images falsely claim to show pro-Trump ...",
+      "url": "https://www.usatoday.com/story/news/factcheck/2021/01/06/fact-check-images-falsely-claim-show-pro-trump-demonstrations/6566890002/"
+    },
+    {
+      "date": "Jun 10, 2025",
+      "position": 10,
+      "site_name": "www.bbc.com",
+      "snippet": "Latest updates from the BBC's specialists in fact-checking, verifying video and tackling disinformation.",
+      "title": "BBC Verify Live: Debunking AI fakes as US protests spark ...",
+      "url": "https://www.bbc.com/news/live/cpvkwvgevmrt"
     }
   ],
-  "total_results": 2
+  "total_results": 10,
+  "page": 0
 }

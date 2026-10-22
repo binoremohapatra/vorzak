@@ -10,6 +10,12 @@ import sys
 import json
 import httpx
 
+try:
+    from dotenv import load_dotenv
+    load_dotenv()
+except ImportError:
+    pass
+
 SAMPLES_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "docs", "tinyfish-samples"))
 os.makedirs(SAMPLES_DIR, exist_ok=True)
 
@@ -34,8 +40,20 @@ def run_spike():
                 save_sample("search_sample.json", resp.json())
             else:
                 print(f"[WARN] Search API returned {resp.status_code}: {resp.text}")
+
+            print("Querying TinyFish Fetch API...")
+            fetch_resp = httpx.post(
+                "https://api.fetch.tinyfish.ai",
+                json={"urls": ["https://www.reuters.com/fact-check/"], "format": "markdown"},
+                headers=headers,
+                timeout=15.0
+            )
+            if fetch_resp.status_code == 200:
+                save_sample("fetch_sample.json", fetch_resp.json())
+            else:
+                print(f"[WARN] Fetch API returned {fetch_resp.status_code}: {fetch_resp.text}")
         except Exception as e:
-            print(f"[WARN] Live Search failed: {e}")
+            print(f"[WARN] Live TinyFish call failed: {e}")
 
     # Fallback / calibrated sample if not saved
     search_path = os.path.join(SAMPLES_DIR, "search_sample.json")

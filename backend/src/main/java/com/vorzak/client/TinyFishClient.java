@@ -2,6 +2,7 @@ package com.vorzak.client;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.vorzak.security.HardenedDownloader;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
@@ -81,12 +82,14 @@ public class TinyFishClient {
                     JsonNode resultsNode = root.get("results");
                     if (resultsNode != null && resultsNode.isArray()) {
                         for (JsonNode n : resultsNode) {
+                            String domain = n.hasNonNull("site_name") ? n.path("site_name").asText("") : n.path("domain").asText("");
+                            String pubDate = n.hasNonNull("date") ? n.path("date").asText(null) : n.path("published_date").asText(null);
                             items.add(new SearchResultItem(
                                     n.path("title").asText(""),
                                     n.path("url").asText(""),
                                     n.path("snippet").asText(""),
-                                    n.path("domain").asText(""),
-                                    n.path("published_date").asText(null)
+                                    domain,
+                                    pubDate
                             ));
                         }
                     }
@@ -133,16 +136,21 @@ public class TinyFishClient {
                         if (imgArr.isArray()) {
                             for (JsonNode img : imgArr) imgs.add(img.asText());
                         }
+                        String textContent = n.hasNonNull("text") ? n.path("text").asText("") : n.path("markdown").asText("");
+                        String canonicalUrl = n.hasNonNull("final_url") ? n.path("final_url").asText("") : n.path("canonical_url").asText(n.path("url").asText(""));
+                        String pubDate = n.hasNonNull("published_date") ? n.path("published_date").asText(null) : null;
+                        String dateSrc = (pubDate != null && !pubDate.isBlank()) ? "PAGE_METADATA" : "UNKNOWN";
+
                         items.add(new FetchedPageItem(
                                 n.path("url").asText(""),
-                                n.path("canonical_url").asText(n.path("url").asText("")),
+                                canonicalUrl,
                                 n.path("title").asText(""),
-                                n.path("published_date").asText(null),
-                                n.path("date_source").asText("UNKNOWN"),
+                                pubDate,
+                                dateSrc,
                                 n.path("og_image").asText(null),
                                 imgs,
-                                n.path("markdown").asText(""),
-                                n.path("content_sha256").asText("")
+                                textContent,
+                                HardenedDownloader.calculateSha256(textContent.getBytes(StandardCharsets.UTF_8))
                         ));
                     }
                 }
