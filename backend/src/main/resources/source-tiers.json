@@ -1,0 +1,52 @@
+{
+  "fact_checkers": [
+    "snopes.com",
+    "politifact.com",
+    "factcheck.org",
+    "fullfact.org",
+    "leadstories.com",
+    "checkyourfact.com",
+    "boomlive.in",
+    "altnews.in",
+    "reuters.com/fact-check",
+    "apnews.com/hub/ap-fact-check",
+    "afp.com/factcheck",
+    "bbc.com/news/reality_check"
+  ],
+  "wires": [
+    "reuters.com",
+    "apnews.com",
+    "afp.com",
+    "upi.com",
+    "bloomberg.com"
+  ],
+  "major_outlets": [
+    "bbc.com",
+    "bbc.co.uk",
+    "nytimes.com",
+    "washingtonpost.com",
+    "theguardian.com",
+    "wsj.com",
+    "cnn.com",
+    "nbcnews.com",
+    "cbsnews.com",
+    "aljazeera.com",
+    "lemonde.fr",
+    "spiegel.de",
+    "dw.com",
+    "time.com",
+    "theatlantic.com"
+  ],
+  "social": [
+    "twitter.com",
+    "x.com",
+    "facebook.com",
+    "instagram.com",
+    "reddit.com",
+    "tiktok.com",
+    "telegram.org",
+    "t.me",
+    "youtube.com",
+    "threads.net"
+  ]
+}

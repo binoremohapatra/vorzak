@@ -1,0 +1,55 @@
+server:
+  port: ${SERVER_PORT:8080}
+
+spring:
+  application:
+    name: vorzak-backend
+
+  datasource:
+    url: ${SPRING_DATASOURCE_URL:jdbc:postgresql://localhost:5432/vorzak}
+    username: ${SPRING_DATASOURCE_USERNAME:vorzak}
+    password: ${SPRING_DATASOURCE_PASSWORD:vorzak_secret}
+    driver-class-name: org.postgresql.Driver
+    hikari:
+      connection-timeout: 5000
+      maximum-pool-size: 10
+
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    open-in-view: false
+    properties:
+      hibernate:
+        format_sql: false
+
+  flyway:
+    enabled: true
+    baseline-on-migrate: true
+    locations: classpath:db/migration
+
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 12MB
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+  endpoint:
+    health:
+      show-details: always
+
+vorzak:
+  storage:
+    evidence-path: ${EVIDENCE_STORAGE_PATH:./data/evidence}
+  worker:
+    url: ${IMAGE_WORKER_URL:http://localhost:8001}
+  tinyfish:
+    api-key: ${TINYFISH_API_KEY:}
+    search-url: ${TINYFISH_SEARCH_URL:https://api.search.tinyfish.ai}
+    fetch-url: ${TINYFISH_FETCH_URL:https://api.fetch.tinyfish.ai}
+    agent-url: ${TINYFISH_AGENT_URL:https://agent.tinyfish.ai}
+    max-steps: ${MAX_AGENT_STEPS:20}
+    agent-enabled: ${TINYFISH_AGENT_ENABLED:false}

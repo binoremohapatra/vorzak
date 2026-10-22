@@ -1,0 +1,12 @@
+{
+  "run_id": "run_tf_982348274a",
+  "status": "COMPLETED",
+  "streaming_url": "https://browser.tinyfish.ai/live/run_tf_982348274a",
+  "steps_taken": 8,
+  "max_steps": 20,
+  "extracted_data": {
+    "earliest_timestamp": "2018-06-14T16:30:00Z",
+    "publisher": "Associated Press",
+    "verified_caption": "NATO Allied drills in Western Poland, June 2018."
+  }
+}

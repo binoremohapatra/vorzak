@@ -1,0 +1,20 @@
+{
+  "query": "protest photo fact check",
+  "results": [
+    {
+      "title": "Fact Check: 2018 Training Exercise Image Falsely Linked to 2024 Event",
+      "url": "https://www.reuters.com/fact-check/2018-exercise-image-2024-claim",
+      "snippet": "A photograph showing military armor was captured during a 2018 NATO exercise in Poland, not in 2024.",
+      "domain": "reuters.com",
+      "published_date": "2024-10-15T12:00:00Z"
+    },
+    {
+      "title": "Military exercises conclude in Eastern Poland",
+      "url": "https://apnews.com/article/poland-military-drills-2018",
+      "snippet": "Troops participate in tactical drills in western Poland on June 14, 2018.",
+      "domain": "apnews.com",
+      "published_date": "2018-06-14T16:30:00Z"
+    }
+  ],
+  "total_results": 2
+}

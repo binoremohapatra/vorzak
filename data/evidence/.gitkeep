@@ -1,0 +1,2 @@
+# Evidence storage directory
+Evidence files (submitted images, candidate images, diff masks) are stored here named by their SHA-256 hash.

@@ -1,0 +1,19 @@
+{
+  "status": "success",
+  "results": [
+    {
+      "url": "https://apnews.com/article/poland-military-drills-2018",
+      "canonical_url": "https://apnews.com/article/poland-military-drills-2018",
+      "title": "Military exercises conclude in Eastern Poland",
+      "published_date": "2018-06-14T16:30:00Z",
+      "date_source": "PAGE_METADATA",
+      "og_image": "https://apnews.com/images/poland-drills-2018.jpg",
+      "image_urls": [
+        "https://apnews.com/images/poland-drills-2018.jpg",
+        "https://apnews.com/images/thumb-lead.jpg"
+      ],
+      "markdown": "# Military exercises conclude in Eastern Poland\n\nTroops participate in tactical drills...",
+      "content_sha256": "8f481c4e7240f9076f7c13284ff0d0ea3efd3ce57c7908b981c2f90a887a0322"
+    }
+  ]
+}

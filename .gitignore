@@ -1,0 +1,40 @@
+# IDE & OS
+.idea/
+.vscode/
+*.swp
+*.DS_Store
+Thumbs.db
+
+# Build Artifacts
+target/
+dist/
+build/
+*.class
+
+# Node / Web
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.eslintcache
+
+# Python / Image Worker
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+.pytest_cache/
+
+# Runtime Evidence & Logs
+data/evidence/*
+!data/evidence/.gitkeep
+logs/
+*.log
+
+# Environment & Secrets
+.env
+.env.local
